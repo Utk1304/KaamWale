@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "893433345107",
+    "firebase_url": "https://kaamwale-2ec91-default-rtdb.firebaseio.com",
+    "project_id": "kaamwale-2ec91",
+    "storage_bucket": "kaamwale-2ec91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893433345107:android:2ab2431d7ef6a1495542a6",
+        "android_client_info": {
+          "package_name": "com.example.kaamwale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893433345107-1l42bgcm10td31i0md97acoqq376egf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kaamwale",
+            "certificate_hash": "e9542a4353aaf86c648cb6490be44012c2541085"
+          }
+        },
+        {
+          "client_id": "893433345107-ge8n75bf8thjldr5iv29m72ck7aju0a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOOvLG6DzHMNrsw6MXPxugjv3P5ThS6FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893433345107-7n05qfpmca0bijegm2870bfirlj5ud1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893433345107:android:3ee49046bad792845542a6",
+        "android_client_info": {
+          "package_name": "com.example.kaamwale_data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893433345107-ge8n75bf8thjldr5iv29m72ck7aju0a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOOvLG6DzHMNrsw6MXPxugjv3P5ThS6FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893433345107-7n05qfpmca0bijegm2870bfirlj5ud1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893433345107:android:cda64471637a8b125542a6",
+        "android_client_info": {
+          "package_name": "help.service.kaamwale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893433345107-ge8n75bf8thjldr5iv29m72ck7aju0a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOOvLG6DzHMNrsw6MXPxugjv3P5ThS6FE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893433345107-7n05qfpmca0bijegm2870bfirlj5ud1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

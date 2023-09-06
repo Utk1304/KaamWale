@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="help.service.kaamwale.Acservice.AcDetails">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wordcloudfinal"
+        android:scaleType="fitCenter"
+        android:alpha="0.6"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Select Your Ac Service"
+                android:textColor="#036794"
+                android:textSize="19sp"
+                android:fontFamily="@font/font1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/aclinear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvw">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ac1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="120dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:checkedIconTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/acservice1" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                app:cardBackgroundColor="#F6F0FF"
+                app:cardCornerRadius="25dp"
+                android:visibility="gone"
+                app:cardElevation="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="35dp"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Choose Your Type"
+                        android:textColor="#055F88"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="@font/font1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/Radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/rd1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:button="@drawable/custom_icon"
+                            android:paddingLeft="10dp"
+                            android:fontFamily="@font/font1"
+                            android:text="AC Service"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/rd2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:button="@drawable/custom_icon"
+                            android:paddingLeft="10dp"
+                            android:fontFamily="@font/font1"
+                            android:text="AC Repair"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/rd3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:button="@drawable/custom_icon"
+                            android:paddingLeft="10dp"
+                            android:text="AC Fitting"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/font1"
+                            app:layout_constraintTop_toTopOf="@+id/textView"
+                            tools:layout_editor_absoluteX="382dp" />
+                    </RadioGroup>
+
+
+                    <Button
+                        android:id="@+id/bs"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/font1"
+                        android:background="@drawable/cwbtn"
+                        android:text="Select Type" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/txtvw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:cardBackgroundColor="#F6F0FF"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:fontFamily="@font/font1"
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:text="Kindly Enter Your Details"
+                        android:textColor="#055F88"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/postal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_border"
+                            android:drawableStart="@drawable/postal"
+                            android:drawablePadding="16dp"
+                            android:ems="10"
+                            android:fontFamily="@font/font1"
+                            android:hint="Pincode"
+                            android:inputType="number"
+                            android:padding="16dp" />
+
+                        <EditText
+                            android:id="@+id/city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_border"
+                            android:drawableStart="@drawable/city"
+                            android:drawablePadding="16dp"
+                            android:ems="10"
+                            android:hint="City"
+                            android:fontFamily="@font/font1"
+                            android:padding="16dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <EditText
+                        android:id="@+id/Society"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_border"
+                        android:drawableStart="@drawable/house"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="@font/font1"
+                        android:ems="10"
+                        android:hint="House No., Building Name"
+                        android:padding="16dp" />
+
+                    <EditText
+                        android:id="@+id/nearby"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_border"
+                        android:drawableStart="@drawable/location"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:fontFamily="@font/font1"
+                        android:hint="Landmark"
+                        android:padding="16dp" />
+
+                    <EditText
+                        android:id="@+id/street"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/font1"
+                        android:background="@drawable/round_border"
+                        android:drawableStart="@drawable/street1"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:hint="Road Name, Area, Colony"
+                        android:inputType="text"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/Next"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"
+                android:layout_marginBottom="70dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/font1"
+                android:background="@drawable/cwbtn"
+                android:text="Next" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include layout="@layout/offeraheet2" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

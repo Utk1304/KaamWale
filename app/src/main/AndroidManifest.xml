@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KaamWale"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Settings.ViewOrders"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".Plumbingservice.PlumbingFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".Acservice.AcFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".Login.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Plumbingservice.PlumbingDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Acservice.AcDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Maidservice.MaidDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Maidservice.MaidFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".Plumbingservice.PlumbingService"
+            android:exported="false" />
+        <activity
+            android:name=".Acservice.AcService"
+            android:exported="false" />
+        <activity
+            android:name=".Maidservice.MaidService"
+            android:exported="false" />
+        <activity
+            android:name=".Carwash.CarFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".Carwash.Cardetail"
+            android:exported="false" />
+        <activity
+            android:name=".Carwash.CarWash"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Login.RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9969892987045704~7343953498"/>
+
+    </application>
+
+</manifest>

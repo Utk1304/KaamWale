@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Settings"
+            android:textSize="50sp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/vieworder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="View Orders"
+            android:gravity="start|center_vertical"
+            android:textSize="22sp"
+            android:fontFamily="@font/font1"
+            android:drawableEnd="@drawable/cart"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/use"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="How to Use Application"
+            android:gravity="start|center_vertical"
+            android:drawableEnd="@drawable/question"
+            android:textSize="22sp"
+            android:fontFamily="@font/font1"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Share "
+            android:gravity="start|center_vertical"
+            android:textSize="22sp"
+            android:fontFamily="@font/font1"
+            android:drawableEnd="@drawable/share"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Feedback"
+            android:gravity="start|center_vertical"
+            android:textSize="22sp"
+            android:fontFamily="@font/font1"
+            android:drawableEnd="@drawable/baseline_feedback_24"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/Privacy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Privacy Policy !"
+            android:gravity="start|center_vertical"
+            android:textSize="22sp"
+            android:fontFamily="@font/font1"
+            android:drawableEnd="@drawable/baseline_policy_24"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</RelativeLayout>

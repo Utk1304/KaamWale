@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="help.service.kaamwale.Carwash.CarFinalPage">
+
+    <TextView
+        android:id="@+id/cartxt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Your Order Details"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font1"
+        android:textColor="@color/primaryTextColor"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carcard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cartxt1">
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:weightSum="6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/carlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/app_name"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/carbannerDescrption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Your Helping Hand!"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/font1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/carimg1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sedan"/>
+
+                    <TextView
+                        android:id="@+id/carType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Car Cleaning Service"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/carduration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="For XYZ Month"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/txtvwborder"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/carNm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/txtvwborder"
+                android:drawableStart="@drawable/carimg"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Car Name"
+                android:fontFamily="@font/font1"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Carnum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/txtvwborder"
+                android:drawableStart="@drawable/numplate"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="number "
+                android:textAllCaps="true"
+                android:fontFamily="@font/font1"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/caradr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/txtvwborder"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:padding="8dp"
+                    app:drawableStartCompat="@drawable/house"
+                    android:gravity="center_vertical"
+                    android:text="31,paras Bunglows,near ringroad,Kathwada road,nava naroda,ahmedabad,382330"
+                    android:textSize="20sp"
+                    android:maxLines="3"
+                    android:singleLine="false"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card1">
+
+                <TextView
+                    android:id="@+id/cartextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Choose Payment Method"
+                    android:textColor="#055F88"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font1"
+                    android:layout_gravity="center"/>
+
+                <RadioGroup
+                    android:id="@+id/carRadiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                <!--    <RadioButton
+                        android:id="@+id/rd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:button="@drawable/custom_icon"
+                        android:paddingLeft="10dp"
+                        android:text="Pay with Upi"
+                        android:fontFamily="@font/font1"
+                        android:drawableEnd="@drawable/paytm"
+                        android:textSize="18sp" />-->
+
+                    <RadioButton
+                        android:id="@+id/carrd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:button="@drawable/custom_icon"
+                        android:paddingLeft="10dp"
+                        android:text="Pay at Doorstep  "
+                        android:textSize="18sp"
+                        android:fontFamily="@font/font1"
+                        app:layout_constraintTop_toTopOf="@+id/textView"
+                        tools:layout_editor_absoluteX="382dp"
+                        android:drawableEnd="@drawable/house"/>
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/carbs"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/cwbtn"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font1"
+                    android:text="Confirm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/carfullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/caremailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/carPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

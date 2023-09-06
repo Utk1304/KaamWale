@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="help.service.kaamwale.Carwash.Cardetail">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wordcloudfinal"
+        android:scaleType="fitCenter"
+        android:alpha="0.6"/>
+
+    <ScrollView
+        android:id="@+id/MaidscrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Maidtxtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Maid Service At Your Door Step"
+                android:textColor="#036794"
+                android:textSize="19sp"
+                android:fontFamily="@font/font1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/Maidlinear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtvw">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/Maid1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="120dp"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:checkedIconTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/maid2" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/Maidcard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                app:cardBackgroundColor="#F6F0FF"
+                app:cardCornerRadius="25dp"
+                android:visibility="gone"
+                app:cardElevation="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <LinearLayout
+                    android:id="@id/Maidlinear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="35dp"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/MaidtextView"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Choose Your Requirements"
+                        android:textColor="#055F88"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="@font/font1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/MaidRadiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/Maidrd1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:button="@drawable/custom_icon"
+                            android:paddingLeft="10dp"
+                            android:fontFamily="@font/font1"
+                            android:text="Brooming"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/Maidrd2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:button="@drawable/custom_icon"
+                            android:paddingLeft="10dp"
+                            android:fontFamily="@font/font1"
+                            android:text="Moping"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/Maidrd3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:button="@drawable/custom_icon"
+                            android:paddingLeft="10dp"
+                            android:text="Brooming+Moping"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/font1"
+                            app:layout_constraintTop_toTopOf="@+id/textView"
+                            tools:layout_editor_absoluteX="382dp" />
+                    </RadioGroup>
+
+
+                    <Button
+                        android:id="@+id/Maidbs"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/font1"
+                        android:background="@drawable/cwbtn"
+                        android:text="Select Service" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/Maidtxtvw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/Maidcard2"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:cardBackgroundColor="#F6F0FF"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:fontFamily="@font/font1"
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:text="Kindly Enter Your Details"
+                        android:textColor="#055F88"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/Maidpostal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_border"
+                            android:drawableStart="@drawable/postal"
+                            android:drawablePadding="16dp"
+                            android:ems="10"
+                            android:fontFamily="@font/font1"
+                            android:hint="Pincode"
+                            android:inputType="number"
+                            android:padding="16dp" />
+
+                        <EditText
+                            android:id="@+id/Maidcity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_border"
+                            android:drawableStart="@drawable/city"
+                            android:drawablePadding="16dp"
+                            android:ems="10"
+                            android:hint="City"
+                            android:fontFamily="@font/font1"
+                            android:padding="16dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <EditText
+                        android:id="@+id/MaidSociety"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_border"
+                        android:drawableStart="@drawable/house"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="@font/font1"
+                        android:ems="10"
+                        android:hint="House No., Building Name"
+                        android:padding="16dp" />
+
+                    <EditText
+                        android:id="@+id/Maidnearby"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_border"
+                        android:drawableStart="@drawable/location"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:fontFamily="@font/font1"
+                        android:hint="Landmark"
+                        android:padding="16dp" />
+
+                    <EditText
+                        android:id="@+id/Maidstreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/font1"
+                        android:background="@drawable/round_border"
+                        android:drawableStart="@drawable/street1"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:hint="Road Name, Area, Colony"
+                        android:inputType="text"
+                        android:padding="16dp" />
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/MaidNext"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="70dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/font1"
+                android:visibility="gone"
+                android:background="@drawable/cwbtn"
+                android:text="Next" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include layout="@layout/offersheet1" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

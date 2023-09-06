@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="help.service.kaamwale.Carwash.CarWash">
+
+    <ImageView
+        android:id="@+id/carw1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/acservice123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-127dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carw1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="60dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:fontFamily="@font/font1"
+                android:textColor="#02425F"
+                android:text=" * Service Will Be Provided Once Only In Case Of Filter Cleaning.
+        \n\n * Detailed Filter Wash With Blower.
+        \n\n  * Surroundings Will Be Cleaned After Service.
+        \n\n * Monthly Service Gurantee In Case Of Repairing.
+        \n\n * In Case Of Gas Filling Only One Time Fullfill.
+        \n\n * Payment Will be 700 ₹ on Visiting charge.
+        \n\n * Material Costs Might Apply According To Requirements."/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/acbs1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Book Service"
+        android:fontFamily="@font/font1"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cwbtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
